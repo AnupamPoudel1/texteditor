@@ -1,38 +1,167 @@
-.App {
-  text-align: center;
+/* 
+    Root
+*/
+
+:root {
+  --light: #d8dbe0;
+  --dark: #28292c;
+  --link: rgb(27, 129, 112);
+  --link-hover: rgb(24, 94, 82);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* 
+  Resets
+*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background: #faf6e9;
+}
+
+.navbar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  padding: 10px;
+  color: #1b1b1b;
+  padding: 20px;
+}
+
+.navbar .logo {
+  display: flex;
+  justify-content: Left;
+  align-items: center;
+  width: 30%;
+  font-size: 20px;
+}
+
+.logo span {
+  color: #ffa500;
+}
+
+.logo ion-icon {
+  color: #61dbfb;
+  font-size: 25px;
+}
+
+.navbar .navlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.navlist li {
+  margin: 0px 20px;
+  color: #1b1b1b;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.navlist li:hover {
+  color: #ffa500;
+  border-bottom: 3px solid #ffa500;
+  font-weight: bold;
+}
+
+.sm-btn {
+  background: #ffa500;
+  color: #1b1b1b;
+  height: 35px;
+  width: 140px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+}
+
+.dngr {
+  background: red;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sm-btn:hover {
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.relative {
+  margin-left: 10px;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffa500;
+  margin: 50px auto;
+}
+
+.title {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.textarea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.textarea textarea {
+  width: 500px;
+  height: 200px;
+  margin: 10px;
+  padding: 10px;
+  background: white;
+  color: #1b1b1b;
+  outline: none;
+}
+
+.utility-btns {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.utility-btns button {
+  margin: 0 10px;
+}
+
+.summary {
+  margin: 50px;
+}
+
+.summary h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.summary p {
+  font-size: 18px;
+  color: #1b1b1b;
+}
+
+/* 
+  toggle switch copied
+*/
